@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.calculator-container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Λίγο πιο φαρδύ για τον πίνακα */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.results-box {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+#monthlyPayment, #totalInterest {
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Στυλ για τον πίνακα αποπληρωμής */
+#scheduleContainer {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    max-height: 400px;
+    overflow-y: auto; 
+}
+
+#scheduleTable table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+}
+
+#scheduleTable th, #scheduleTable td {
+    padding: 8px;
+    border: 1px solid #eee;
+    text-align: right;
+}
+
+#scheduleTable th {
+    background-color: #007bff;
+    color: white;
+    position: sticky;
+    top: 0;
+}
